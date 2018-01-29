@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wangguan.CheckerBoardController" fx:id="vbox">
+    <children>
+        <MenuBar fx:id="menuBar">
+            <menus>
+                <Menu mnemonicParsing="false" text="Grid ">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#gridMenuItemClick" text="16 x 16" />
+                        <MenuItem mnemonicParsing="false" onAction="#gridMenuItemClick" text="10 x 10" />
+                        <MenuItem mnemonicParsing="false" onAction="#gridMenuItemClick" text="8 x 8" />
+                        <MenuItem mnemonicParsing="false" onAction="#gridMenuItemClick" text="3 x 3" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Colors">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#colorMenuItemClick" text="Default" />
+                        <MenuItem mnemonicParsing="false" onAction="#colorMenuItemClick" text="Blue" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <AnchorPane fx:id="board" prefHeight="200" prefWidth="320" maxHeight="-Infinity" maxWidth="-Infinity" >
+        </AnchorPane>
+    </children>
+</VBox>
+
